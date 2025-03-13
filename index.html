@@ -3,78 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <title>Personal Blog</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">My Website</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="kidcalc.html" class="btn">KidCalc</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="hero">
-        <h1>Welcome to My Personal Website</h1>
-        <p>I'm passionate about web development and design.</p>
-        <a href="#portfolio" class="btn">View My Work</a>
-    </section>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Aly Ahmed, a dedicated web developer with a passion for creating user-friendly and visually appealing websites. I specialize in HTML, CSS, and JavaScript, with a strong focus on responsive design and performance optimization.</p>
-    </section>
-    
-    <section id="portfolio">
-        <h2>My Work</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">Project 1</div>
-            <div class="portfolio-item">Project 2</div>
-            <div class="portfolio-item">Project 3</div>
-        </div>
-    </section>
-    
-    <section id="blog">
-        <h2>Blog</h2>
-        <div class="blog-grid">
-            <div class="blog-post">
-                <h3>Why I Code</h3>
-                <p>Coding is more than a technical skill; it's a gateway to creativity, problem-solving, and societal contribution. Embracing programming has been a transformative journey for me, and I believe it holds immense potential for anyone willing to explore it.</p>
-                <a href="blog1.html">Read More</a>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="./kidcalc/index.html">KidCalc</a></li>
+            
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- First Section: Blogs -->
+        <section class="blogs">
+            <h2>Featured Blogs</h2>
+            
+            <div class="blog-card">
+                <h3>why I code</h3>
+                <p>coding is more than a technical skill; it's a gateway to creativity, problem-solving, and societal contribution. Embracing programming has been a transformative journey for me, and I believe it holds immense potential for anyone willing to explore it.</p>
+            </p>
+                <a href="blog-posts/post1.html">Read More</a>
             </div>
-            <div class="blog-post">
+
+            <div class="blog-card">
                 <h3>How Coding Improves Problem-Solving</h3>
                 <p>Coding helps develop critical thinking and problem-solving skills...</p>
-                <a href="blog2.html">Read More</a>
+                <a href="#">Read More</a>
             </div>
-            <div class="blog-post">
-                <h3>My Journey in Web Development</h3>
-                <p>From learning basic HTML to building full-fledged websites, my journey in web development has been exciting and rewarding.</p>
-                <a href="blog3.html">Read More</a>
-            </div>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-    
+        </section>
+
+        <!-- Second Section: Social Media Links -->
+        <aside class="social-media">
+            <h2>Follow Me</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/aly.tealeb/" target="_blank">Facebook</a></li>
+                <li><a href="#" target="_blank">Twitter</a></li>
+                <li><a href="#" target="_blank">Instagram</a></li>
+                <li><a href="#" target="_blank">LinkedIn</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 My Website. All Rights Reserved.</p>
+        <p>&copy; 2025 Personal Blog. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
+
 
